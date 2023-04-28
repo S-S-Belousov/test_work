@@ -12,13 +12,14 @@ class SearchForDuplicateNumbers:
                 result_set.add(self.nums[i])
         return list(result_set)
 
-
 if __name__ == '__main__':
     n = int(input('Введите N: '))
     nums = [randint(1, n) for i in range(n+2)]
     print(f'Сгенерированные числа: {nums}')
     solution = SearchForDuplicateNumbers(nums)
-    result = solution.findDuplicate()
     print(
-        'Повторяющиеся числа: {}'.format(result)
+        'Повторяющиеся числа: {}'.format(
+        solution.findDuplicate()
         )
+        )
+    
