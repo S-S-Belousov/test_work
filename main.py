@@ -16,6 +16,6 @@ class SearchForDuplicateNumbers:
 if __name__ == '__main__':
     n = int(input('Введите N: '))
     nums = [randint(1, n) for i in range(n + 2)]
-    print(f'Сгенерированные числа:', nums)
+    print('Сгенерированные числа:', nums)
     solution = SearchForDuplicateNumbers(nums)
     print('Повторяющиеся числа:', solution.find_duplicate())
